@@ -3,7 +3,7 @@
 ## Requirements ##
 
  - Java JDK 17
- - Gradle 3.2.0 o superior
+ - Gradle 3.2.0 or higher
 
 ## Compile
 
