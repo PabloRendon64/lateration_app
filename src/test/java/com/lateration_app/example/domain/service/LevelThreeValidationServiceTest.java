@@ -57,7 +57,7 @@ public class LevelThreeValidationServiceTest {
         satellites.add(getSatellite("dummy"));
         when(satelliteDBPort.findAll())
                 .thenReturn(satellites);
-        Assertions.assertEquals("no hay suficiente información", assertThrows(LevelThreeValidationException.class,
+        Assertions.assertEquals("there is not enough information", assertThrows(LevelThreeValidationException.class,
                 () -> levelThreeValidationService.validateAtLeastThreeStoredMessages()).getDescription());
     }
 

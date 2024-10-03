@@ -2,6 +2,8 @@ package com.lateration_app.example.domain.service;
 
 import com.lateration_app.example.domain.exception.LevelThreeValidationException;
 import com.lateration_app.example.domain.model.Satellite;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer.Optimum;
 import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
 import sw.trilateration.NonLinearLeastSquaresSolver;
@@ -10,6 +12,7 @@ import sw.trilateration.TrilaterationFunction;
 import java.util.Arrays;
 import java.util.List;
 
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class LevelOneService {
 
     public static String getMessage(String[]... messages) {
